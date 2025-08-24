@@ -1,13 +1,19 @@
 from django.shortcuts import render
 
-def home_pages(request):
-    return render(request, 'home.html')
+def home(request):
+    return render(request, 'pages/home.html')
 
-def about_pages(request):
-    return render(request, 'about.html')
+def about(request):
+    return render(request, 'pages/about.html')
 
-def second_pages(request):
-    return render(request, 'blog-list.html')
+def contact(request):
+    return render(request, 'pages/contact.html')
 
-def third_pages(request):
-    return render(request, 'blog-detail.html')
+def faq(request):
+    return render(request, 'pages/faq.html')
+
+def coming_soon(request):
+    return render(request, 'pages/coming-soon.html')
+
+def error_404(request):
+    return render(request, 'pages/404.html')

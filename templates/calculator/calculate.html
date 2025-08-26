@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalkulyator</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7;
+      --danger:#ff6b6b;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(110,231,183,0.06), transparent 10%),
+        radial-gradient(1000px 500px at 90% 90%, rgba(99,102,241,0.03), transparent 10%),
+        var(--bg);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+
+    .card{
+      width:380px;
+      max-width:calc(100% - 40px);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    h1{
+      margin:0 0 12px 0;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
+    p.lead{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    form{
+      display:grid;
+      gap:10px;
+    }
+
+    label{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .row{
+      display:flex;
+      gap:10px;
+    }
+
+    .input, select, button, .link-btn{
+      width:100%;
+      padding:12px 14px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.04);
+      background:var(--glass);
+      color:inherit;
+      font-size:15px;
+      outline:none;
+      text-align:center;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+    select{
+      appearance:none;
+      background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+                        linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position: calc(100% - 18px) calc(1em + 2px), calc(100% - 13px) calc(1em + 2px);
+      background-size: 6px 6px, 6px 6px;
+      background-repeat: no-repeat;
+      padding-right:42px;
+    }
+
+    .controls { display:grid; gap:8px; margin-top:6px; }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      cursor:pointer;
+      user-select:none;
+      font-weight:600;
+      letter-spacing:0.1px;
+    }
+
+    .btn.primary, .link-btn.primary{
+      background: linear-gradient(90deg, rgba(110,231,183,0.12), rgba(99,102,241,0.08));
+      border:1px solid rgba(110,231,183,0.14);
+      color:var(--accent);
+    }
+
+    .btn:active{ transform:translateY(1px) }
+
+    .result-box{
+      margin-top:12px;
+      padding:14px;
+      border-radius:10px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      border:1px dashed rgba(255,255,255,0.03);
+      min-height:48px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .result-label{ color:var(--muted); font-size:13px }
+    .result-value{ font-size:18px; font-weight:700; color:#fff }
+
+    /* Responsive */
+    @media (max-width:420px){
+      .card{ padding:16px }
+      h1{ font-size:18px }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Kalkulyator</h1>
+    <p class="lead">2 ta butun son va amalni tanlang.</p>
+
+    <form method="post" id="calcForm" action="{% url 'calculator:calculate' %}">
+        {% csrf_token %}
+      <div>
+        <label for="a">Birinchi son</label>
+        <input id="a" name="first_num" class="input" type="number" step="1" placeholder="Masalan: 12" />
+      </div>
+
+      <div>
+        <label for="op">Amal</label>
+        <select id="op" name="amal" aria-label="Amal tanlash">
+          <option value="+">Qoʻshish (+)</option>
+          <option value="-">Ayirish (−)</option>
+          <option value="*">Koʻpaytirish (×)</option>
+          <option value="/">Boʻlish (÷)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="b">Ikkinchi son</label>
+        <input id="b" name="second_num" class="input" type="number" step="1" placeholder="Masalan: 3" />
+      </div>
+
+      <div class="controls">
+          <button class="btn primary" type="submit">Hisoblash</button>
+          <a href="{% url 'calculator:history' %}" class="link-btn primary">Tarixni ko‘rish</a>
+      </div>
+
+      {% if result %}
+      <p>Natija: {{ result }}</p>
+      {% endif %}
+    </form>
+  </main>
+</body>
+</html>

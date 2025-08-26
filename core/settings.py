@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.blogs',
     'apps.products',
+    'apps.calculator'
 ]
 
 MIDDLEWARE = [

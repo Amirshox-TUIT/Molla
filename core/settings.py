@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.blogs',
     'apps.products',
-    'apps.calculator'
+    'apps.calculator',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

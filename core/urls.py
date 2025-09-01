@@ -21,11 +21,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.accounts.urls', namespace='accounts')),
-    path('', include('apps.blogs.urls', namespace='blogs')),
+    path('auth/', include('apps.accounts.urls', namespace='accounts')),
+    path('blogs/', include('apps.blogs.urls', namespace='blogs')),
     path('', include('apps.pages.urls', namespace='pages')),
-    path('', include('apps.products.urls', namespace='products')),
+    path('products/', include('apps.products.urls', namespace='products')),
     path('', include('apps.calculator.urls', namespace='calculator')),
+    path("ckeditor/", include("ckeditor_uploader.urls")),
 ]
 
 

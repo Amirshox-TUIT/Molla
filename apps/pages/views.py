@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from apps.pages.forms import ContactForm
+from apps.pages.models import AboutModel
 
 
 def home(request):
     return render(request, 'pages/home.html')
 
 def about(request):
-    return render(request, 'pages/about.html')
+    persons = AboutModel.objects.all()
+    context = {'persons': persons}
+    return render(request, 'pages/about.html', context)
 
 def contact(request):
     if request.method == "POST":

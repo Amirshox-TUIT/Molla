@@ -6,7 +6,7 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact us</li>
             </ol>
@@ -53,7 +53,7 @@
                     <h2 class="title mb-1">Got Any Questions?</h2>
                     <p class="mb-2">Use the form below to get in touch with the sales team</p>
 
-                    <!-- Сообщения об успехе или ошибке -->
+                    <!-- Success/Error Messages -->
                     {% if messages %}
                         {% for message in messages %}
                             <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} contact-alert">
@@ -68,7 +68,7 @@
                             <div class="col-sm-6">
                                 <label for="id_name" class="sr-only">Name</label>
                                 <input type="text" name="name" class="form-control {% if form.name.errors %}is-invalid{% endif %}"
-                                       id="id_name" placeholder="Name *" value="{{ form.name.value|default:'' }}">
+                                       id="id_name" placeholder="Name *">
                                 {% for error in form.name.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
@@ -77,39 +77,38 @@
                             <div class="col-sm-6">
                                 <label for="id_email" class="sr-only">Email</label>
                                 <input type="email" name="email" class="form-control {% if form.email.errors %}is-invalid{% endif %}"
-                                       id="id_email" placeholder="Email *" value="{{ form.email.value|default:'' }}">
+                                       id="id_email" placeholder="Email *">
                                 {% for error in form.email.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
                             </div>
                         </div>
 
-                        <!-- Поле телефона -->
+                        <!-- Phone + Subject yonma-yon -->
                         <div class="row mt-3">
                             <div class="col-sm-6">
                                 <label for="id_phone" class="sr-only">Phone</label>
                                 <input type="text" name="phone" class="form-control {% if form.phone.errors %}is-invalid{% endif %}"
-                                       id="id_phone" placeholder="Phone *" value="{{ form.phone.value|default:'' }}">
+                                       id="id_phone" placeholder="Phone">
                                 {% for error in form.phone.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
                             </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <label for="id_subject" class="sr-only">Subject</label>
                                 <input type="text" name="subject" class="form-control {% if form.subject.errors %}is-invalid{% endif %}"
-                                       id="id_subject" placeholder="Subject" value="{{ form.subject.value|default:'' }}">
+                                       id="id_subject" placeholder="Subject">
                                 {% for error in form.subject.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
                             </div>
                         </div>
 
+                        <!-- Message -->
                         <label for="id_message" class="sr-only">Message</label>
                         <textarea name="message" class="form-control {% if form.message.errors %}is-invalid{% endif %}"
-                                  cols="30" rows="4" id="id_message" required placeholder="Message *">{{ form.message.value|default:'' }}</textarea>
+                                  cols="30" rows="4" id="id_message" required
+                                  placeholder="Message *"></textarea>
                         {% for error in form.message.errors %}
                             <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
@@ -179,7 +178,6 @@
         <div id="map"></div>
     </div>
 </main>
-
 <style>
     .contact-alert {
         margin-bottom: 20px;

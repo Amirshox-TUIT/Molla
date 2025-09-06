@@ -1,21 +1,22 @@
 {% extends 'layout/base.html' %}
 {% load static %}
+{% load i18n %}
 {% block title %}Molla - Bootstrap eCommerce Template{% endblock %}
 {% block content %}
 <main class="main">
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans 'Home' %}</a></li>
+                <li class="breadcrumb-item"><a href="#">{% trans 'Pages' %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans 'Contact us' %}</li>
             </ol>
         </div>
     </nav>
 
     <div class="container">
         <div class="page-header page-header-big text-center" style="background-image: url('{% static 'assets/images/contact-header-bg.jpg' %}')">
-            <h1 class="page-title text-white">Contact us<span class="text-white">keep in touch with us</span></h1>
+            <h1 class="page-title text-white">{% trans 'Contact us' %}<span class="text-white">{% trans 'keep in touch with us' %}</span></h1>
         </div>
     </div>
 
@@ -23,14 +24,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-2 mb-lg-0">
-                    <h2 class="title mb-1">Contact Information</h2>
-                    <p class="mb-3">Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.</p>
+                    <h2 class="title mb-1">{% trans 'Contact Information' %}</h2>
+                    <p class="mb-3">
+                        {% blocktranslate %}
+                        Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+                        {% endblocktranslate %}
+                    </p>
                     <div class="row">
                         <div class="col-sm-7">
                             <div class="contact-info">
-                                <h3>The Office</h3>
+                                <h3>{% trans 'The Office' %}</h3>
                                 <ul class="contact-list">
-                                    <li><i class="icon-map-marker"></i>70 Washington Square South New York, NY 10012, United States</li>
+                                    <li><i class="icon-map-marker"></i>{% trans '70 Washington Square South New York, NY 10012, United States' %}</li>
                                     <li><i class="icon-phone"></i><a href="tel:+92423567">+92 423 567</a></li>
                                     <li><i class="icon-envelope"></i><a href="mailto:info@Molla.com">info@Molla.com</a></li>
                                 </ul>
@@ -38,10 +43,10 @@
                         </div>
                         <div class="col-sm-5">
                             <div class="contact-info">
-                                <h3>Office Hours</h3>
+                                <h3>{% trans 'Office Hours' %}</h3>
                                 <ul class="contact-list">
-                                    <li><i class="icon-clock-o"></i><span class="text-dark">Monday-Saturday</span> <br>11am-7pm ET</li>
-                                    <li><i class="icon-calendar"></i><span class="text-dark">Sunday</span> <br>11am-6pm ET</li>
+                                    <li><i class="icon-clock-o"></i><span class="text-dark">{% trans 'Monday-Saturday' %}</span> <br>11am-7pm ET</li>
+                                    <li><i class="icon-calendar"></i><span class="text-dark">{% trans 'Sunday' %}</span> <br>11am-6pm ET</li>
                                 </ul>
                             </div>
                         </div>
@@ -50,8 +55,8 @@
 
                 <!-- Contact Form -->
                 <div class="col-lg-6">
-                    <h2 class="title mb-1">Got Any Questions?</h2>
-                    <p class="mb-2">Use the form below to get in touch with the sales team</p>
+                    <h2 class="title mb-1">{% trans 'Got Any Questions?' %}</h2>
+                    <p class="mb-2">{% trans 'Use the form below to get in touch with the sales team' %}</p>
 
                     <!-- Success/Error Messages -->
                     {% if messages %}
@@ -66,9 +71,9 @@
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-sm-6">
-                                <label for="id_name" class="sr-only">Name</label>
+                                <label for="id_name" class="sr-only">{% trans 'Name' %}</label>
                                 <input type="text" name="name" class="form-control {% if form.name.errors %}is-invalid{% endif %}"
-                                       id="id_name" placeholder="Name *">
+                                       id="id_name" placeholder="{% trans 'Name' %} *">
                                 {% for error in form.name.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
@@ -87,17 +92,17 @@
                         <!-- Phone + Subject yonma-yon -->
                         <div class="row mt-3">
                             <div class="col-sm-6">
-                                <label for="id_phone" class="sr-only">Phone</label>
+                                <label for="id_phone" class="sr-only">{% trans 'Phone' %}</label>
                                 <input type="text" name="phone" class="form-control {% if form.phone.errors %}is-invalid{% endif %}"
-                                       id="id_phone" placeholder="Phone">
+                                       id="id_phone" placeholder="{% trans 'Phone' %}">
                                 {% for error in form.phone.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
                             </div>
                             <div class="col-sm-6">
-                                <label for="id_subject" class="sr-only">Subject</label>
+                                <label for="id_subject" class="sr-only">{% trans 'Subject' %}</label>
                                 <input type="text" name="subject" class="form-control {% if form.subject.errors %}is-invalid{% endif %}"
-                                       id="id_subject" placeholder="Subject">
+                                       id="id_subject" placeholder="{% trans 'Subject' %}">
                                 {% for error in form.subject.errors %}
                                     <div class="invalid-feedback">{{ error }}</div>
                                 {% endfor %}
@@ -105,16 +110,16 @@
                         </div>
 
                         <!-- Message -->
-                        <label for="id_message" class="sr-only">Message</label>
+                        <label for="id_message" class="sr-only">{% trans 'Message' %}</label>
                         <textarea name="message" class="form-control {% if form.message.errors %}is-invalid{% endif %}"
                                   cols="30" rows="4" id="id_message" required
-                                  placeholder="Message *"></textarea>
+                                  placeholder="{% trans 'Message' %} *"></textarea>
                         {% for error in form.message.errors %}
                             <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
 
                         <button type="submit" class="btn btn-outline-primary-2 btn-minwidth-sm mt-3">
-                            <span>SUBMIT</span>
+                            <span>{% trans 'SUBMIT' %}</span>
                             <i class="icon-long-arrow-right"></i>
                         </button>
                     </form>
@@ -124,7 +129,7 @@
             <hr class="mt-4 mb-5">
 
             <div class="stores mb-4 mb-lg-5">
-                <h2 class="title text-center mb-3">Our Stores</h2>
+                <h2 class="title text-center mb-3">{% trans 'Our Stores' %}</h2>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="store">
@@ -139,10 +144,10 @@
                                         <h3 class="store-title">Wall Street Plaza</h3>
                                         <address>88 Pine St, New York, NY 10005, USA</address>
                                         <div><a href="tel:+19878766543">+1 987-876-6543</a></div>
-                                        <h4 class="store-subtitle">Store Hours:</h4>
-                                        <div>Monday - Saturday 11am to 7pm</div>
-                                        <div>Sunday 11am to 6pm</div>
-                                        <a href="#" class="btn btn-link" target="_blank"><span>View Map</span><i class="icon-long-arrow-right"></i></a>
+                                        <h4 class="store-subtitle">{% trans 'Store Hours:' %}</h4>
+                                        <div>{% trans 'Monday - Saturday' %} 11am to 7pm</div>
+                                        <div>{% trans 'Sunday' %} 11am to 6pm</div>
+                                        <a href="#" class="btn btn-link" target="_blank"><span>{% trans 'View Map' %}</span><i class="icon-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -159,14 +164,14 @@
                                 </div>
                                 <div class="col-sm-7 col-xl-6">
                                     <div class="store-content">
-                                        <h3 class="store-title">One New York Plaza</h3>
+                                        <h3 class="store-title">{% trans 'One New York Plaza' %}</h3>
                                         <address>88 Pine St, New York, NY 10005, USA</address>
                                         <div><a href="tel:+19878766543">+1 987-876-6543</a></div>
-                                        <h4 class="store-subtitle">Store Hours:</h4>
-                                        <div>Monday - Friday 9am to 8pm</div>
-                                        <div>Saturday - 9am to 2pm</div>
-                                        <div>Sunday - Closed</div>
-                                        <a href="#" class="btn btn-link" target="_blank"><span>View Map</span><i class="icon-long-arrow-right"></i></a>
+                                        <h4 class="store-subtitle">{% trans 'Store Hours:' %}</h4>
+                                        <div>{% trans 'Monday - Friday' %} 9am to 8pm</div>
+                                        <div>{% trans 'Saturday' %} - 9am to 2pm</div>
+                                        <div>{% trans 'Sunday - Closed' %}</div>
+                                        <a href="#" class="btn btn-link" target="_blank"><span>{% trans 'View Map' %}</span><i class="icon-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>

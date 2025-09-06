@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-06 17:38+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\layout\footer.html:8
+msgid "Footer Logo"
+msgstr ""
+
+#: .\templates\layout\footer.html:9
+msgid ""
+"Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu "
+"vulputate magna eros eu erat."
+msgstr ""
+
+#: .\templates\layout\footer.html:12 .\templates\pages\about.html:130
+msgid "Facebook"
+msgstr ""
+
+#: .\templates\layout\footer.html:13 .\templates\pages\about.html:131
+msgid "Twitter"
+msgstr ""
+
+#: .\templates\layout\footer.html:14 .\templates\pages\about.html:132
+msgid "Instagram"
+msgstr ""
+
+#: .\templates\layout\footer.html:15
+msgid "Youtube"
+msgstr ""
+
+#: .\templates\layout\footer.html:16
+msgid "Pinterest"
+msgstr ""
+
+#: .\templates\layout\footer.html:23
+msgid "Useful Links"
+msgstr ""
+
+#: .\templates\layout\footer.html:26
+msgid "About Molla"
+msgstr ""
+
+#: .\templates\layout\footer.html:27
+msgid "How to shop on Molla"
+msgstr ""
+
+#: .\templates\layout\footer.html:28
+msgid "FAQ"
+msgstr ""
+
+#: .\templates\layout\footer.html:29 .\templates\pages\contact.html:12
+#: .\templates\pages\contact.html:19
+msgid "Contact us"
+msgstr ""
+
+#: .\templates\layout\footer.html:30
+msgid "Log in"
+msgstr ""
+
+#: .\templates\layout\footer.html:37
+msgid "Customer Service"
+msgstr ""
+
+#: .\templates\layout\footer.html:40
+msgid "Payment Methods"
+msgstr ""
+
+#: .\templates\layout\footer.html:41
+msgid "Money-back guarantee!"
+msgstr ""
+
+#: .\templates\layout\footer.html:42
+msgid "Returns"
+msgstr ""
+
+#: .\templates\layout\footer.html:43
+msgid "Shipping"
+msgstr ""
+
+#: .\templates\layout\footer.html:44
+msgid "Terms and conditions"
+msgstr ""
+
+#: .\templates\layout\footer.html:45
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\layout\footer.html:52
+msgid "My Account"
+msgstr ""
+
+#: .\templates\layout\footer.html:55
+msgid "Sign In"
+msgstr ""
+
+#: .\templates\layout\footer.html:56
+msgid "View Cart"
+msgstr ""
+
+#: .\templates\layout\footer.html:57
+msgid "My Wishlist"
+msgstr ""
+
+#: .\templates\layout\footer.html:58
+msgid "Track My Order"
+msgstr ""
+
+#: .\templates\layout\footer.html:59
+msgid "Help"
+msgstr ""
+
+#: .\templates\layout\footer.html:70
+msgid "Copyright © 2019 Molla Store. All Rights Reserved."
+msgstr ""
+
+#: .\templates\layout\footer.html:73
+msgid "Payment methods"
+msgstr ""
+
+#: .\templates\layout\header-base.html:30
+msgid "Wishlist"
+msgstr ""
+
+#: .\templates\layout\header-base.html:31
+msgid "About Us"
+msgstr ""
+
+#: .\templates\layout\header-base.html:32
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\layout\header-base.html:33
+msgid "Login"
+msgstr ""
+
+#: .\templates\layout\header-base.html:45
+msgid "Toggle mobile menu"
+msgstr ""
+
+#: .\templates\layout\header-base.html:61 .\templates\pages\about.html:15
+#: .\templates\pages\contact.html:10
+msgid "Home"
+msgstr ""
+
+#: .\templates\layout\header-base.html:64
+msgid "Products"
+msgstr ""
+
+#: .\templates\layout\header-base.html:67
+msgid "Blogs"
+msgstr ""
+
+#: .\templates\layout\header-base.html:70
+msgid "About"
+msgstr ""
+
+#: .\templates\layout\header-base.html:73
+msgid "Contact"
+msgstr ""
+
+#: .\templates\pages\about.html:4
+msgid "Molla - Bootstrap eCommerce Template"
+msgstr ""
+
+#: .\templates\pages\about.html:9 .\templates\pages\about.html:17
+msgid "About us 2"
+msgstr ""
+
+#: .\templates\pages\about.html:9 .\templates\pages\about.html:16
+#: .\templates\pages\contact.html:11
+msgid "Pages"
+msgstr ""
+
+#: .\templates\pages\about.html:27
+msgid "Who We Are"
+msgstr ""
+
+#: .\templates\pages\about.html:28
+msgid ""
+"Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, "
+"eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et "
+"vulputate volutpat, uctus metus libero eu augue. Morbi purus libero, "
+"faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent "
+"elementum hendrerit tortor. Sed semper lorem at felis."
+msgstr ""
+
+#: .\templates\pages\about.html:41
+msgid "Design Quality"
+msgstr ""
+
+#: .\templates\pages\about.html:42
+msgid ""
+"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus "
+"metus libero eu augue."
+msgstr ""
+
+#: .\templates\pages\about.html:53
+msgid "Professional Support"
+msgstr ""
+
+#: .\templates\pages\about.html:54
+msgid ""
+"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu "
+"vulputate magna eros eu erat."
+msgstr ""
+
+#: .\templates\pages\about.html:65
+msgid "Made With Love"
+msgstr ""
+
+#: .\templates\pages\about.html:66
+msgid ""
+"Pellentesque a diam sit amet mi ullamcorper vehicula. Nullam quis massa sit "
+"amet nibh viverra malesuada."
+msgstr ""
+
+#: .\templates\pages\about.html:83
+msgid "Happy Customer"
+msgstr ""
+
+#: .\templates\pages\about.html:92
+msgid "Years in Business"
+msgstr ""
+
+#: .\templates\pages\about.html:101
+msgid "Return Clients"
+msgstr ""
+
+#: .\templates\pages\about.html:110
+msgid "Awards Won"
+msgstr ""
+
+#: .\templates\pages\about.html:119
+msgid "Meet Our Team"
+msgstr ""
+
+#: .\templates\pages\about.html:126
+msgid "member photo"
+msgstr ""
+
+#: .\templates\pages\about.html:146
+msgid "LETS START WORK"
+msgstr ""
+
+#: .\templates\pages\about.html:157
+msgid "The world's premium design brands in one destination."
+msgstr ""
+
+#: .\templates\pages\about.html:158
+msgid ""
+"Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, "
+"aliquet vel, dapibus id, mattis vel, nis"
+msgstr ""
+
+#: .\templates\pages\about.html:164 .\templates\pages\about.html:170
+#: .\templates\pages\about.html:176 .\templates\pages\about.html:182
+#: .\templates\pages\about.html:188 .\templates\pages\about.html:194
+#: .\templates\pages\about.html:200 .\templates\pages\about.html:206
+msgid "Brand Name"
+msgstr ""
+
+#: .\templates\pages\contact.html:19
+msgid "keep in touch with us"
+msgstr ""
+
+#: .\templates\pages\contact.html:27
+msgid "Contact Information"
+msgstr ""
+
+#: .\templates\pages\contact.html:29
+msgid ""
+"\n"
+"                        Vestibulum volutpat, lacus a ultrices sagittis, mi "
+"neque euismod dui, eu pulvinar nunc sapien ornare nisl.\n"
+"                        "
+msgstr ""
+
+#: .\templates\pages\contact.html:36
+msgid "The Office"
+msgstr ""
+
+#: .\templates\pages\contact.html:38
+msgid "70 Washington Square South New York, NY 10012, United States"
+msgstr ""
+
+#: .\templates\pages\contact.html:46
+msgid "Office Hours"
+msgstr ""
+
+#: .\templates\pages\contact.html:48
+msgid "Monday-Saturday"
+msgstr ""
+
+#: .\templates\pages\contact.html:49 .\templates\pages\contact.html:149
+msgid "Sunday"
+msgstr ""
+
+#: .\templates\pages\contact.html:58
+msgid "Got Any Questions?"
+msgstr ""
+
+#: .\templates\pages\contact.html:59
+msgid "Use the form below to get in touch with the sales team"
+msgstr ""
+
+#: .\templates\pages\contact.html:74 .\templates\pages\contact.html:76
+msgid "Name"
+msgstr ""
+
+#: .\templates\pages\contact.html:95 .\templates\pages\contact.html:97
+msgid "Phone"
+msgstr ""
+
+#: .\templates\pages\contact.html:103 .\templates\pages\contact.html:105
+msgid "Subject"
+msgstr ""
+
+#: .\templates\pages\contact.html:113 .\templates\pages\contact.html:116
+msgid "Message"
+msgstr ""
+
+#: .\templates\pages\contact.html:122
+msgid "SUBMIT"
+msgstr ""
+
+#: .\templates\pages\contact.html:132
+msgid "Our Stores"
+msgstr ""
+
+#: .\templates\pages\contact.html:147 .\templates\pages\contact.html:170
+msgid "Store Hours:"
+msgstr ""
+
+#: .\templates\pages\contact.html:148
+msgid "Monday - Saturday"
+msgstr ""
+
+#: .\templates\pages\contact.html:150 .\templates\pages\contact.html:174
+msgid "View Map"
+msgstr ""
+
+#: .\templates\pages\contact.html:167
+msgid "One New York Plaza"
+msgstr ""
+
+#: .\templates\pages\contact.html:171
+msgid "Monday - Friday"
+msgstr ""
+
+#: .\templates\pages\contact.html:172
+msgid "Saturday"
+msgstr ""
+
+#: .\templates\pages\contact.html:173
+msgid "Sunday - Closed"
+msgstr ""

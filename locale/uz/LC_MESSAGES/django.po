@@ -1,0 +1,371 @@
+# Uzbek translations for Molla project.
+# Copyright (C) 2025
+# This file is distributed under the same license as the Molla package.
+# Amirshox <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Molla 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-06 17:38+0500\n"
+"PO-Revision-Date: 2025-09-06 17:55+0500\n"
+"Last-Translator: Amirshox <EMAIL@ADDRESS>\n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\templates\layout\footer.html:8
+msgid "Footer Logo"
+msgstr "Pastki logo"
+
+#: .\templates\layout\footer.html:9
+msgid ""
+"Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu "
+"vulputate magna eros eu erat."
+msgstr "Bizning xizmatlarimiz doimiy ravishda yuqori sifatni ta’minlaydi."
+
+#: .\templates\layout\footer.html:12 .\templates\pages\about.html:130
+msgid "Facebook"
+msgstr "Facebook"
+
+#: .\templates\layout\footer.html:13 .\templates\pages\about.html:131
+msgid "Twitter"
+msgstr "Twitter"
+
+#: .\templates\layout\footer.html:14 .\templates\pages\about.html:132
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\templates\layout\footer.html:15
+msgid "Youtube"
+msgstr "YouTube"
+
+#: .\templates\layout\footer.html:16
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: .\templates\layout\footer.html:23
+msgid "Useful Links"
+msgstr "Foydali havolalar"
+
+#: .\templates\layout\footer.html:26
+msgid "About Molla"
+msgstr "Molla haqida"
+
+#: .\templates\layout\footer.html:27
+msgid "How to shop on Molla"
+msgstr "Mollada qanday xarid qilish"
+
+#: .\templates\layout\footer.html:28
+msgid "FAQ"
+msgstr "Ko‘p so‘raladigan savollar"
+
+#: .\templates\layout\footer.html:29 .\templates\pages\contact.html:12
+#: .\templates\pages\contact.html:19
+msgid "Contact us"
+msgstr "Biz bilan bog‘laning"
+
+#: .\templates\layout\footer.html:30
+msgid "Log in"
+msgstr "Kirish"
+
+#: .\templates\layout\footer.html:37
+msgid "Customer Service"
+msgstr "Mijozlarga xizmat"
+
+#: .\templates\layout\footer.html:40
+msgid "Payment Methods"
+msgstr "To‘lov usullari"
+
+#: .\templates\layout\footer.html:41
+msgid "Money-back guarantee!"
+msgstr "Pulni qaytarish kafolati!"
+
+#: .\templates\layout\footer.html:42
+msgid "Returns"
+msgstr "Qaytarish"
+
+#: .\templates\layout\footer.html:43
+msgid "Shipping"
+msgstr "Yetkazib berish"
+
+#: .\templates\layout\footer.html:44
+msgid "Terms and conditions"
+msgstr "Shartlar va qoidalar"
+
+#: .\templates\layout\footer.html:45
+msgid "Privacy Policy"
+msgstr "Maxfiylik siyosati"
+
+#: .\templates\layout\footer.html:52
+msgid "My Account"
+msgstr "Mening hisobim"
+
+#: .\templates\layout\footer.html:55
+msgid "Sign In"
+msgstr "Kirish"
+
+#: .\templates\layout\footer.html:56
+msgid "View Cart"
+msgstr "Savatchani ko‘rish"
+
+#: .\templates\layout\footer.html:57
+msgid "My Wishlist"
+msgstr "Sevimlilarim"
+
+#: .\templates\layout\footer.html:58
+msgid "Track My Order"
+msgstr "Buyurtmani kuzatish"
+
+#: .\templates\layout\footer.html:59
+msgid "Help"
+msgstr "Yordam"
+
+#: .\templates\layout\footer.html:70
+msgid "Copyright © 2019 Molla Store. All Rights Reserved."
+msgstr "Mualliflik huquqi © 2019 Molla do‘koni. Barcha huquqlar himoyalangan."
+
+#: .\templates\layout\footer.html:73
+msgid "Payment methods"
+msgstr "To‘lov usullari"
+
+#: .\templates\layout\header-base.html:30
+msgid "Wishlist"
+msgstr "Sevimlilar"
+
+#: .\templates\layout\header-base.html:31
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+#: .\templates\layout\header-base.html:32
+msgid "Contact Us"
+msgstr "Biz bilan bog‘lanish"
+
+#: .\templates\layout\header-base.html:33
+msgid "Login"
+msgstr "Kirish"
+
+#: .\templates\layout\header-base.html:45
+msgid "Toggle mobile menu"
+msgstr "Mobil menyuni yoqish/o‘chirish"
+
+#: .\templates\layout\header-base.html:61 .\templates\pages\about.html:15
+#: .\templates\pages\contact.html:10
+msgid "Home"
+msgstr "Asosiy"
+
+#: .\templates\layout\header-base.html:64
+msgid "Products"
+msgstr "Mahsulotlar"
+
+#: .\templates\layout\header-base.html:67
+msgid "Blogs"
+msgstr "Bloglar"
+
+#: .\templates\layout\header-base.html:70
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\layout\header-base.html:73
+msgid "Contact"
+msgstr "Aloqa"
+
+#: .\templates\pages\about.html:4
+msgid "Molla - Bootstrap eCommerce Template"
+msgstr "Molla - Bootstrap elektron savdo shabloni"
+
+#: .\templates\pages\about.html:9 .\templates\pages\about.html:17
+msgid "About us 2"
+msgstr "Biz haqimizda 2"
+
+#: .\templates\pages\about.html:9 .\templates\pages\about.html:16
+#: .\templates\pages\contact.html:11
+msgid "Pages"
+msgstr "Sahifalar"
+
+#: .\templates\pages\about.html:27
+msgid "Who We Are"
+msgstr "Biz kimmiz"
+
+#: .\templates\pages\about.html:28
+msgid ""
+"Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, "
+"eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et "
+"vulputate volutpat, uctus metus libero eu augue. Morbi purus libero, "
+"faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent "
+"elementum hendrerit tortor. Sed semper lorem at felis."
+msgstr "Bizning jamoamiz sifatli xizmat va innovatsion yechimlarni taklif qiladi."
+
+#: .\templates\pages\about.html:41
+msgid "Design Quality"
+msgstr "Dizayn sifati"
+
+#: .\templates\pages\about.html:42
+msgid ""
+"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus "
+"metus libero eu augue."
+msgstr "Bizning dizaynlarimiz yuqori sifat va qulaylikni ta’minlaydi."
+
+#: .\templates\pages\about.html:53
+msgid "Professional Support"
+msgstr "Professional yordam"
+
+#: .\templates\pages\about.html:54
+msgid ""
+"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu "
+"vulputate magna eros eu erat."
+msgstr "Mutaxassislarimiz barcha savollarga tezkor yordam beradi."
+
+#: .\templates\pages\about.html:65
+msgid "Made With Love"
+msgstr "Mehr bilan yaratilgan"
+
+#: .\templates\pages\about.html:66
+msgid ""
+"Pellentesque a diam sit amet mi ullamcorper vehicula. Nullam quis massa sit "
+"amet nibh viverra malesuada."
+msgstr "Har bir loyihamiz sevgi va mas’uliyat bilan yaratilgan."
+
+#: .\templates\pages\about.html:83
+msgid "Happy Customer"
+msgstr "Baxtli mijozlar"
+
+#: .\templates\pages\about.html:92
+msgid "Years in Business"
+msgstr "Biznesdagi yillar"
+
+#: .\templates\pages\about.html:101
+msgid "Return Clients"
+msgstr "Qaytib keluvchi mijozlar"
+
+#: .\templates\pages\about.html:110
+msgid "Awards Won"
+msgstr "Qo‘lga kiritilgan mukofotlar"
+
+#: .\templates\pages\about.html:119
+msgid "Meet Our Team"
+msgstr "Bizning jamoa bilan tanishing"
+
+#: .\templates\pages\about.html:126
+msgid "member photo"
+msgstr "a’zo surati"
+
+#: .\templates\pages\about.html:146
+msgid "LETS START WORK"
+msgstr "ISHNI BOSHLAYLIK"
+
+#: .\templates\pages\about.html:157
+msgid "The world's premium design brands in one destination."
+msgstr "Dunyodagi eng yaxshi dizayn brendlari bir joyda."
+
+#: .\templates\pages\about.html:158
+msgid ""
+"Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, "
+"aliquet vel, dapibus id, mattis vel, nis"
+msgstr "Eng yaxshi mahsulot va xizmatlarni birlashtiruvchi yagona manzil."
+
+#: .\templates\pages\about.html:164 .\templates\pages\about.html:170
+#: .\templates\pages\about.html:176 .\templates\pages\about.html:182
+#: .\templates\pages\about.html:188 .\templates\pages\about.html:194
+#: .\templates\pages\about.html:200 .\templates\pages\about.html:206
+msgid "Brand Name"
+msgstr "Brend nomi"
+
+#: .\templates\pages\contact.html:19
+msgid "keep in touch with us"
+msgstr "Biz bilan aloqada bo‘ling"
+
+#: .\templates\pages\contact.html:27
+msgid "Contact Information"
+msgstr "Aloqa ma’lumotlari"
+
+#: .\templates\pages\contact.html:29
+msgid ""
+"\n"
+"                        Vestibulum volutpat, lacus a ultrices sagittis, mi "
+"neque euismod dui, eu pulvinar nunc sapien ornare nisl.\n"
+"                        "
+msgstr "Savollaringiz uchun biz bilan bog‘lanishingiz mumkin."
+
+#: .\templates\pages\contact.html:36
+msgid "The Office"
+msgstr "Ofis"
+
+#: .\templates\pages\contact.html:38
+msgid "70 Washington Square South New York, NY 10012, United States"
+msgstr "70 Washington Square South, Nyu-York, NY 10012, AQSH"
+
+#: .\templates\pages\contact.html:46
+msgid "Office Hours"
+msgstr "Ish vaqti"
+
+#: .\templates\pages\contact.html:48
+msgid "Monday-Saturday"
+msgstr "Dushanba–Shanba"
+
+#: .\templates\pages\contact.html:49 .\templates\pages\contact.html:149
+msgid "Sunday"
+msgstr "Yakshanba"
+
+#: .\templates\pages\contact.html:58
+msgid "Got Any Questions?"
+msgstr "Savollaringiz bormi?"
+
+#: .\templates\pages\contact.html:59
+msgid "Use the form below to get in touch with the sales team"
+msgstr "Savdo jamoasi bilan bog‘lanish uchun formani to‘ldiring"
+
+#: .\templates\pages\contact.html:74 .\templates\pages\contact.html:76
+msgid "Name"
+msgstr "Ism"
+
+#: .\templates\pages\contact.html:95 .\templates\pages\contact.html:97
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\templates\pages\contact.html:103 .\templates\pages\contact.html:105
+msgid "Subject"
+msgstr "Mavzu"
+
+#: .\templates\pages\contact.html:113 .\templates\pages\contact.html:116
+msgid "Message"
+msgstr "Xabar"
+
+#: .\templates\pages\contact.html:122
+msgid "SUBMIT"
+msgstr "Yuborish"
+
+#: .\templates\pages\contact.html:132
+msgid "Our Stores"
+msgstr "Do‘konlarimiz"
+
+#: .\templates\pages\contact.html:147 .\templates\pages\contact.html:170
+msgid "Store Hours:"
+msgstr "Do‘kon vaqti:"
+
+#: .\templates\pages\contact.html:148
+msgid "Monday - Saturday"
+msgstr "Dushanba–Shanba"
+
+#: .\templates\pages\contact.html:150 .\templates\pages\contact.html:174
+msgid "View Map"
+msgstr "Xaritani ko‘rish"
+
+#: .\templates\pages\contact.html:167
+msgid "One New York Plaza"
+msgstr "One New York Plaza"
+
+#: .\templates\pages\contact.html:171
+msgid "Monday - Friday"
+msgstr "Dushanba–Juma"
+
+#: .\templates\pages\contact.html:172
+msgid "Saturday"
+msgstr "Shanba"
+
+#: .\templates\pages\contact.html:173
+msgid "Sunday - Closed"
+msgstr "Yakshanba – Yopiq"

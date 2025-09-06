@@ -1,0 +1,119 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Molla - Bootstrap eCommerce Template{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="page-header text-center" style="background-image: url('{% static 'assets/images/page-header-bg.jpg' %}')">
+        <div class="container">
+            <h1 class="page-title">Grid 3 Columns<span>Shop</span></h1>
+        </div>
+    </div>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Grid 3 Columns</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <!-- Products section -->
+                <div class="col-lg-9">
+                    <div class="toolbox">
+                        <div class="toolbox-left">
+                            <div class="toolbox-info">
+                                Showing <span>{{ products|length }}</span> Products
+                            </div>
+                        </div>
+
+                        <div class="toolbox-right">
+                            <div class="toolbox-sort">
+                                <label for="sortby">Sort by:</label>
+                                <div class="select-custom">
+                                    <select name="sortby" id="sortby" class="form-control" onchange="location = this.value;">
+                                        <option value="?sortby=popularity" {% if request.GET.sortby == "popularity" %}selected{% endif %}>Most Popular</option>
+                                        <option value="?sortby=rating" {% if request.GET.sortby == "rating" %}selected{% endif %}>Most Rated</option>
+                                        <option value="?sortby=date" {% if request.GET.sortby == "date" %}selected{% endif %}>Date</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products mb-3">
+                        <div class="row justify-content-center">
+                            {% for product in products %}
+                            <div class="col-6 col-md-4 col-lg-4">
+                                <div class="product product-7 text-center">
+                                    <figure class="product-media">
+                                        {% if product.is_new %}
+                                            <span class="product-label label-new">New</span>
+                                        {% endif %}
+
+                                        {% if product.is_discount %}
+                                            <span class="product-label label-new">Sale</span>
+                                        {% endif %}
+
+                                        <a href="{{ product.get_absolute_url }}">
+                                            <img src="{{ product.image.url }}" alt="{{ product.title }}" class="product-image">
+                                        </a>
+
+                                        <div class="product-action-vertical">
+                                            <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            {% for cat in product.categories.all %}
+                                                <a href="#">{{ cat.title }}</a>{% if not forloop.last %}, {% endif %}
+                                            {% endfor %}
+                                        </div>
+
+                                        <h3 class="product-title">
+                                            <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+                                        </h3>
+
+                                        <div class="product-price">
+                                            {% if product.discount %}
+                                                <span class="out-price">${{ product.price }}</span>
+                                                <span class="new-price">${{ product.price|floatformat:2 }}</span>
+                                            {% else %}
+                                                <span>${{ product.price }}</span>
+                                            {% endif %}
+                                        </div>
+
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width: {{ product.rating_percent }}%;"></div>
+                                            </div>
+                                            <span class="ratings-text">{{ product.raiting }}/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                                <p>No products found.</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <!-- Pagination (keyin qo‘shsa bo‘ladi) -->
+                </div>
+
+                <!-- Sidebar filters -->
+                {% include 'products/filtering.html' %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
